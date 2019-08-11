@@ -84,6 +84,11 @@ end
     split = filename.split(" - ")
     name = split[1].split(".")[0]
     artist_name = split[0]
+    
+    song = self.new
+    song.name = name
+    song.artist_name = artist_name
+    song
   end 
   
 end
